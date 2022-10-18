@@ -6,14 +6,14 @@ public class Actividad18 {
         int segundoNumero;
         
         do {
-          System.out.print("Introduzca un número entero: ");
+          System.out.print("Introduzce un número: ");
           primerNumero = Integer.parseInt(System.console().readLine());
-          System.out.print("Introduzca otro número entero distinto al anterior: ");
+          System.out.print("Introduce otro número distinto: ");
           segundoNumero = Integer.parseInt(System.console().readLine());
           
           if(primerNumero == segundoNumero) {
             System.out.print("Los números introducidos no son válidos, ");
-            System.out.println(" deben ser distintos.");
+            System.out.println("deben ser distintos.");
           }
         } while (primerNumero == segundoNumero);
         
