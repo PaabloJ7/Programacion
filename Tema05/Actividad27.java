@@ -17,7 +17,7 @@ public class Actividad27 {
     }
         
     System.out.print("Desde 1 hasta " + numeroIntroducido + " hay " + cuenta);
-    System.out.println(" múltiplos de 3 y suman " + suma + ".");
+    System.out.println(" múltiplos de 3 y suman " + suma);
   }
 }
     
