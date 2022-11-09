@@ -1,33 +1,17 @@
-package Tema05;
 public class Actividad19 {
     public static void main(String[] args) {
-    
-        System.out.print("Introduce la altura de la pirámide: ");
-        int altura = Integer.parseInt(System.console().readLine());
-    
-        System.out.print("Introduce el relleno: ");
-        String relleno = System.console().readLine();
-        
-        int planta = 1;
-        int longitud = 1;
-        int espacios = altura-1;
-        
-        while (planta <= altura) {
-          
-          for (int i = 1; i <= espacios; i++) {
+        System.out.print("Introduce la altura: ");
+        int h = Integer.parseInt(System.console().readLine());
+        System.out.print("Introduce el caracter: ");
+        String car = System.console().readLine();
+        for (int fila = 0; fila < h; ++fila) {
+          for (int col = 0; col < h-fila-1; ++col) {
             System.out.print(" ");
           }
-    
-          for (int i = 1; i <= longitud; i++) {
-            System.out.print(relleno);
+          for (int col = 0; col < 2*fila+1; ++col) {
+            System.out.print(car);
           }
-    
           System.out.println();
-    
-          planta++;
-          espacios--;
-          longitud += 2;
         }
       }
-    }
-    
+}

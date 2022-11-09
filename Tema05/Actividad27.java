@@ -10,7 +10,7 @@ public class Actividad27 {
     
     for (int i = 1; i < numeroIntroducido; i++) {
       if ((i % 3) == 0) {
-        System.out.print(i + " ");
+        System.out.println(i + " ");
         cuenta++;
         suma += i;
       }

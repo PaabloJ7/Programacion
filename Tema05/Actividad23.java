@@ -16,9 +16,9 @@ public class Actividad23 {
      numeroDeElementos++;
     } while (suma <= 10000);
         
-        System.out.println("Ha introducido un total de " + numeroDeElementos + " números.");
-        System.out.println("La suma total es " + suma + ".");
-        System.out.println("La media es " + suma / (double) numeroDeElementos);
+        System.out.println("Ha introducido un total de " + numeroDeElementos + " números");
+        System.out.println("La suma es " + suma);
+        System.out.println("La media es " + suma / numeroDeElementos);
         
      } 
  }   

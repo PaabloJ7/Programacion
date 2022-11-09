@@ -9,7 +9,7 @@ public class Actividad10 {
         System.out.println("Para parar, introduzca un número negativo.");
         System.out.println("Vaya introduciendo números:");
 
-        while (numero   >= 0) {
+        while (numero >= 0) {
             numero   = Double.parseDouble(System.console().readLine());
             numeros++;
             suma += numero  ;

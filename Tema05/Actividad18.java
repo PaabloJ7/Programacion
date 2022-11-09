@@ -1,33 +1,26 @@
-package Tema05;
 public class Actividad18 {
     public static void main(String[] args) {
-    
-        int primerNumero;
-        int segundoNumero;
-        
-        do {
-          System.out.print("Introduzce un número: ");
-          primerNumero = Integer.parseInt(System.console().readLine());
-          System.out.print("Introduce otro número distinto: ");
-          segundoNumero = Integer.parseInt(System.console().readLine());
-          
-          if(primerNumero == segundoNumero) {
-            System.out.print("Los números introducidos no son válidos, ");
-            System.out.println("deben ser distintos.");
-          }
-        } while (primerNumero == segundoNumero);
-        
-        if (primerNumero > segundoNumero) {
-          int aux = primerNumero;
-          primerNumero = segundoNumero;
-          segundoNumero = aux;
+        System.out.print("Introduce un número: ");
+        int num1 = Integer.parseInt(System.console().readLine());
+        System.out.print("Introduce otro número diferente: ");
+        int num2 = Integer.parseInt(System.console().readLine());
+        if (num1 == num2) {
+            System.out.print("Los numeros introducidos tienen que ser diferentes");
+        } else {
+            int menor = 0;
+            int mayor = 0;
+            int i = 0;
+            if (num1 < num2) {
+                menor = num1;
+                mayor = num2;
+            } else {
+                menor = num2;
+                mayor = num1;
+            }
+            for (i = 0; menor < mayor; i++) {
+                menor += 7;
+            }
+            System.out.print("El número 7 cabe " + (i - 1) + " veces entre el " + num1 + " y el " + num2);
         }
-        
-        for(int i = primerNumero; i <= segundoNumero; i += 7) {
-          System.out.print(i + " ");
-        }
-        
-        System.out.println();
-      }
     }
-
+}
